@@ -6,13 +6,7 @@ const Header = () => {
   return (
     <>
       <input {...register("input1")} placeholder="input1" />
-      <input
-        {...register("version")}
-        onKeyDown={(e) => {
-          if (e.code === "Enter") e.preventDefault();
-        }}
-        placeholder="version"
-      />
+      <input {...register("input2")} placeholder="input2" />
       <button
         type="button"
         onClick={() => {

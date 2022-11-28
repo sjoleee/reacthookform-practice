@@ -1,11 +1,11 @@
 import { useFormContext } from "react-hook-form";
 
 const SubmitButton = () => {
-  const { watch } = useFormContext();
+  const { getValues } = useFormContext();
   return (
     <button
       onClick={() => {
-        console.log(watch());
+        console.log(getValues());
       }}
     >
       제출하기
